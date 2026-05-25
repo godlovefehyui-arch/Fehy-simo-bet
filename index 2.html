@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fehy simo bet démo</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f3f4f6;
+    padding:20px;
+}
+
+.top-title{
+    background:#16a34a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    border-radius:12px;
+    font-size:32px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+button{
+    background:#16a34a;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+input{
+    width:100%;
+    max-width:300px;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table,th,td{
+    border:1px solid #ddd;
+}
+
+th,td{
+    padding:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="top-title">
+Fehy simo bet démo
+</div>
+
+<div class="card">
+<h2>Connexion</h2>
+
+<form>
+<label>Nom d'utilisateur:</label>
+<input type="text" placeholder="Utilisateur">
+
+<label>Mot de passe:</label>
+<input type="password" placeholder="Mot de passe">
+
+<br>
+<button type="submit">Se connecter</button>
+</form>
+</div>
+
+<div class="card">
+<h2>Matchs disponibles</h2>
+
+<p><strong>PSG vs OM</strong></p>
+<p>Cotes : PSG 1.8 | Nul 2.2 | OM 3.5</p>
+<p>Heure : 01/06/2026 20:00</p>
+</div>
+
+<div class="card">
+<h2>Placer un pari</h2>
+
+<form>
+<p><input type="radio" name="bet"> PSG</p>
+<p><input type="radio" name="bet"> Match nul</p>
+<p><input type="radio" name="bet"> OM</p>
+
+<label>Montant FCFA :</label>
+<input type="number">
+
+<br>
+<button type="submit">Valider le pari</button>
+</form>
+</div>
+
+<div class="card">
+<h2>Historique des paris</h2>
+
+<table>
+<thead>
+<tr>
+<th>Match</th>
+<th>Pari</th>
+<th>Montant</th>
+<th>Statut</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>PSG vs OM</td>
+<td>PSG</td>
+<td>500 FCFA</td>
+<td>pending</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>
